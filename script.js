@@ -31,7 +31,7 @@ const opcoesCores = [verdeCipreste, azulInverno, meiaNoite, estelar, rosaClaro ]
 let imagemSelecionada = 1;
 
 function trocarImagem() {
-    const idOpcaoSelecionada = document.querySelector("[name='opcao-imagem']:checked");
+    const idOpcaoSelecionada = document.querySelector("[name='opcao-imagem']:checked").id;
     imagemSelecionada = idOpcaoSelecionada.charAt(0);
     imagemVisualizacao.src = "./imagens/opcoes-cores/imagens-azul-inverno/imagem-"+imagemSelecionada+".jpeg";
 }
